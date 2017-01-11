@@ -24,14 +24,7 @@ class Zwierzak { // klasa reprezentujaca zwierzaka
     }
     
     var czyZdjecieIstnieje : Bool { // computed variable, zwracajacy Bool z informacja czy zwierzak posiada zdjecie
-        get {
-            if(zdjecie != nil) {
-                return true; // zwierzak posiada zdjecie
-            }
-            else {
-                return false; // zwierzak nie posiada zdjecia
-            }
-        }
+        return zdjecie != nil
     }
 }
 
@@ -52,7 +45,6 @@ extension Float { // extension dla typu Float, konwertujace funty na kilogramy
     }
 }
 // Przykladowy sposob dzialania
-
 let zwierz = Zwierzak(imie: "Bartek", gatunek: "kot", waga: 5, plec: "Samiec", zdjecie: "cos");
 
 print(zwierz)
