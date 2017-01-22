@@ -42,12 +42,3 @@ for package in packages {
 print("Suma powierzchni papieru potrzebnego do pakowania: \(sum1)")
 
 print("Suma dlugosc sznurka potrzebnego do zapakowania: \(sum2)")
-
-
-
-
-
-
-
-
-
